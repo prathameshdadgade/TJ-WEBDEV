@@ -1,0 +1,97 @@
+:root{
+  --teal:#2ec1ac;
+  --teal_hover:#279e8c;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+.h-font{
+    font-family: 'Merienda', cursive;
+
+}
+/* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+ 
+  .swiper-wrapper{
+    height: 450px;
+  }
+  .custom-alert{
+    position: fixed;
+    top: 80px;
+    right: 25px;
+  }
+  .custom-bg {
+      background-color:var(--teal);
+      border: 1px solid var(--teal);
+  }
+  .custom-bg :hover{
+      background-color:var(--teal_hover);
+      border-color: var(--teal_hover);
+  }
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /*
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    max-width: 100px;
+  }
+  */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Allow the height to adjust proportionally to maintain aspect ratio */
+    max-height: 300px; 
+  }
+
+  .h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+  }
+
+  .custom-alert{
+    position: fixed;
+    top:50px;
+    right:25px;
+    z-index: 1111;
+  }
+  
+  .swiper-slide .profile img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+  }
+  
+  .swiper-slide .profile h6 {
+    margin: 0; 
+    font-size: 16px; 
+    font-weight: bold; 
+  }
+  .swiper-slide img {
+    width: 100%; /* Make the image fill the width of its container */
+    height: auto; /* Allow the height to adjust proportionally to maintain aspect ratio */
+  }
